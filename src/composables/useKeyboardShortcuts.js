@@ -34,21 +34,21 @@ const shortcuts = [
   // Cmd + LeftArrow for prev
   ['ArrowLeft', e => prev(), { meta: true }],
 
-  // Up Arrow for Volume Up
+  // Down Arrow for Volume Up
   [
-    'ArrowUp',
-    e => () => {
+    'ArrowDown',
+    () => {
       const vol = volume.value - 0.1
       volume.value = vol < 0 ? 0 : vol
     },
   ],
 
-  // Down Arrow for Volume Down
+  // Up Arrow for Volume Down
   [
-    'DownArrow',
-    e => () => {
-      const vol = volume.value - 0.1
-      volume.value = vol < 0 ? 0 : vol
+    'ArrowUp',
+    () => {
+      const vol = volume.value + 0.1
+      volume.value = vol > 1 ? 1 : vol
     },
   ],
 ]

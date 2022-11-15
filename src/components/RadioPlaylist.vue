@@ -4,7 +4,7 @@ import { useCurrentTrack } from '../composables/useCurrentTrack'
 import RadioSong from './RadioSong.vue'
 
 const { songs, state } = usePlaylist()
-const { playing } = useCurrentTrack()
+const { playing, play } = useCurrentTrack()
 
 function isSelected(song) {
   return song.slug === state.value.slug
@@ -21,7 +21,7 @@ function isPlaying(song) {
       :song="song"
       :isSelected="isSelected(song)"
       :isPlaying="isPlaying(song)"
-      @click="playSong(song)"
+      @click="play(song)"
     />
   </ul>
 </template>

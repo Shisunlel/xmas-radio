@@ -18,7 +18,7 @@ defineProps({
 </script>
 <template>
   <li
-    class="text-gray-500 cursor-pointer flex items-center mb-7 md:mb-3 hover:bg-gray-200 pr-5"
+    class="text-gray-500 cursor-pointer flex items-center mb-7 only:md:mb-3 hover:bg-gray-200 pr-5"
     :class="{
       'bg-gray-200': isSelected,
     }"

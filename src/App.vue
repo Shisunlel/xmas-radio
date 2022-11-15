@@ -58,10 +58,6 @@ function isSelected(song) {
 function isPlaying(song) {
   return isSelected(song) && playing.value
 }
-
-function changeVolume(e) {
-  console.log(e / 100)
-}
 </script>
 <template>
   <div class="w-full h-full flex justify-center items-center p-10">

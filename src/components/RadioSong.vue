@@ -43,3 +43,8 @@ defineProps({
     </div>
   </li>
 </template>
+<style scoped>
+li {
+  transition: 0.3s ease background;
+}
+</style>

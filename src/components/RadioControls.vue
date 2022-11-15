@@ -8,7 +8,7 @@ import IconChevronRight from './icons/IconChevronRight.vue'
 import IconChevronLeft from './icons/IconChevronLeft.vue'
 import { useCurrentTrack } from '../composables/useCurrentTrack'
 import { usePlaylist } from '../composables/usePlaylist'
-const { play, pause, rewind, ff, playing, currentTime, duration, volume, progress } = useCurrentTrack()
+const { play, pause, rewind, ff, playing, timeDisplay, volume, progress } = useCurrentTrack()
 const { next, prev } = usePlaylist()
 
 const volumneGradient = computed(() => {
@@ -55,6 +55,9 @@ const volumneGradient = computed(() => {
       style="transform: translateY(-50%)"
       type="range"
     />
+    <div class="hidden sm:block absolute left-5 w-24 top-[50%] whitespace-nowrap" style="transform: translateY(-50%)">
+      {{ timeDisplay }}
+    </div>
   </div>
 </template>
 <style scoped>

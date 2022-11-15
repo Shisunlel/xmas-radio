@@ -9,9 +9,15 @@ const { playing, currentTime, duration, volume } = useMediaControls(el, {
   src: currentTrack,
 })
 
-export function useCurrentTrack() {
-  const progress = computed(() => (currentTime.value / duration.value) * 100)
+function prettifyTime(time) {
+  const minutes = Math.floor(time / 60)
+  const seconds = Math.floor(time - minutes * 60)
 
+  const half = `${minutes.toString().length === 1 ? '0' + minutes : minutes}`
+  return `${half}:${seconds.toString().length === 1 ? '0' + seconds : seconds}`
+}
+
+export function useCurrentTrack() {
   function play(song = null) {
     if (song) state.value = song
     playing.value = false
@@ -19,6 +25,18 @@ export function useCurrentTrack() {
       playing.value = true
     })
   }
+
+  const progress = computed(() => (currentTime.value / duration.value) * 100)
+  const durationPretty = computed(() => {
+    return prettifyTime(duration.value)
+  })
+  const currentTimePretty = computed(() => {
+    return prettifyTime(currentTime.value)
+  })
+
+  const timeDisplay = computed(() => {
+    return `${currentTimePretty.value} - ${durationPretty.value}`
+  })
 
   function pause() {
     playing.value = false
@@ -37,6 +55,7 @@ export function useCurrentTrack() {
     play,
     ff,
     rewind,
+    timeDisplay,
     progress,
     currentTrack,
     playing,

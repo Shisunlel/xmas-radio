@@ -1,5 +1,5 @@
 <script setup>
-import RadioPlayList from '@/components/RadioPlayList.vue'
+import RadioPlayList from '@/components/RadioPlaylist.vue'
 import RadioControls from '@/components/RadioControls.vue'
 import RadioHeader from '@/components/RadioHeader.vue'
 import KeyboardShortcuts from '@/components/KeyboardShortcuts.vue'

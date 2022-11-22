@@ -26,13 +26,13 @@ const shortcuts = [
   ['ArrowRight', e => ff()],
 
   // Cmd + RightArrow for Next
-  ['ArrowRight', e => next(), { meta: true }],
+  ['ArrowRight', e => next(), { shift: true }],
 
   // Left arrow for ff
   ['ArrowLeft', e => rewind()],
 
   // Cmd + LeftArrow for prev
-  ['ArrowLeft', e => prev(), { meta: true }],
+  ['ArrowLeft', e => prev(), { shift: true }],
 
   // Down Arrow for Volume Up
   [
@@ -61,7 +61,7 @@ export function useKeyboardShortcuts() {
 
       if (preventDefault) e.preventDefault()
 
-      if (options.meta && !e.metaKey) return
+      if (options.shift && !e.shiftKey) return
       shortcut[1](e)
     })
   })

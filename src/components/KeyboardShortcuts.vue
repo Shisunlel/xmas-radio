@@ -36,9 +36,9 @@ onKeyStroke('i', e => {
           Seek
         </li>
         <li>
-          <span class="key">⌘</span>
+          <span class="key">⇧</span>
           <span class="key"><IconLeft /></span>,
-          <span class="key">⌘</span>
+          <span class="key">⇧</span>
           <span class="key"><IconRight /></span>
           Skip
         </li>

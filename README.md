@@ -12,7 +12,7 @@ The looted code used to live in `composables/useCurrentTrack.vue` and was center
 
 Fill in the missing code (marked with `//greasy grinch footprints!`) to get the radio working again.
 
-If you're up for a super tricky but entertaining challege, wipe out app.vue completely and come up with a Christmas Radio of your own!
+If you're up for a super tricky but entertaining challege, wipe out app.vue completely and come up with a Christmas Radio of your own! 🚀
 
 ## Example of a solution in action
 

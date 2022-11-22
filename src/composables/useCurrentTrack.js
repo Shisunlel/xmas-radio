@@ -1,4 +1,4 @@
-import { usePlaylist } from './usePlaylist'
+import { usePlaylist } from '@/composables/usePlaylist'
 import { useMediaControls } from '@vueuse/core'
 import { nextTick, computed, ref } from 'vue'
 

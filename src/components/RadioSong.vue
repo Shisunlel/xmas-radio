@@ -1,6 +1,6 @@
 <script setup>
-import IconPlay from './icons/IconPlay.vue'
-import IconPlaying from './icons/IconPlaying.vue'
+import IconPlay from '@/components/icons/IconPlay.vue'
+import IconPlaying from '@/components/icons/IconPlaying.vue'
 defineProps({
   song: {
     type: Object,

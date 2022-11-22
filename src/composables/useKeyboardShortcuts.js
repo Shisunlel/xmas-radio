@@ -1,5 +1,5 @@
-import { useCurrentTrack } from './useCurrentTrack'
-import { usePlaylist } from './usePlaylist'
+import { useCurrentTrack } from '@/composables/useCurrentTrack'
+import { usePlaylist } from '@/composables/usePlaylist'
 import { onKeyStroke } from '@vueuse/core'
 const { play, pause, rewind, ff, playing, currentTime, duration, volume, progress } = useCurrentTrack()
 const { next, prev } = usePlaylist()

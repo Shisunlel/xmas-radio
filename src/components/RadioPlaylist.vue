@@ -1,7 +1,7 @@
 <script setup>
-import { usePlaylist } from '../composables/usePlaylist'
-import { useCurrentTrack } from '../composables/useCurrentTrack'
-import RadioSong from './RadioSong.vue'
+import { usePlaylist } from '@/composables/usePlaylist'
+import { useCurrentTrack } from '@/composables/useCurrentTrack'
+import RadioSong from '@/components/RadioSong.vue'
 
 const { songs, state } = usePlaylist()
 const { playing, play } = useCurrentTrack()

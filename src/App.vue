@@ -1,11 +1,11 @@
 <script setup>
-import RadioPlayList from './components/RadioPlayList.vue'
-import RadioControls from './components/RadioControls.vue'
-import RadioHeader from './components/RadioHeader.vue'
-import KeyboardShortcuts from './components/KeyboardShortcuts.vue'
-import { usePlaylist } from './composables/usePlaylist'
-import { useCurrentTrack } from './composables/useCurrentTrack'
-import { useKeyboardShortcuts } from './composables/useKeyboardShortcuts'
+import RadioPlayList from '@/components/RadioPlayList.vue'
+import RadioControls from '@/components/RadioControls.vue'
+import RadioHeader from '@/components/RadioHeader.vue'
+import KeyboardShortcuts from '@/components/KeyboardShortcuts.vue'
+import { usePlaylist } from '@/composables/usePlaylist'
+import { useCurrentTrack } from '@/composables/useCurrentTrack'
+import { useKeyboardShortcuts } from '@/composables/useKeyboardShortcuts'
 import { watch } from 'vue'
 
 useKeyboardShortcuts()

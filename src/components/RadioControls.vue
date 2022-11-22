@@ -1,13 +1,13 @@
 <script setup>
 import { computed } from 'vue'
-import IconBackward from './icons/IconBackward.vue'
-import IconForward from './icons/IconForward.vue'
-import IconPlay from './icons/IconPlay.vue'
-import IconPause from './icons/IconPause.vue'
-import IconChevronRight from './icons/IconChevronRight.vue'
-import IconChevronLeft from './icons/IconChevronLeft.vue'
-import { useCurrentTrack } from '../composables/useCurrentTrack'
-import { usePlaylist } from '../composables/usePlaylist'
+import IconBackward from '@/components/icons/IconBackward.vue'
+import IconForward from '@/components/icons/IconForward.vue'
+import IconPlay from '@/components/icons/IconPlay.vue'
+import IconPause from '@/components/icons/IconPause.vue'
+import IconChevronRight from '@/components/icons/IconChevronRight.vue'
+import IconChevronLeft from '@/components/icons/IconChevronLeft.vue'
+import { useCurrentTrack } from '@/composables/useCurrentTrack'
+import { usePlaylist } from '@/composables/usePlaylist'
 const { play, pause, rewind, ff, playing, timeDisplay, volume, progress } = useCurrentTrack()
 const { next, prev } = usePlaylist()
 

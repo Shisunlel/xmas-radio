@@ -6,7 +6,13 @@
 
 ## Problem description
 
-Insert problem description and other hints here.
+'Tis the season for Christmas music! Unfortunately, the grumpy ol' grinch has snuck in and stolen some code from our festive Christmas radio.
+
+The looted code used to live in `composables/useCurrentTrack.vue` and was centered around interacting with the [useMediaControls](https://vueuse.org/core/usemediacontrols/#usemediacontrols) composable from [VueUse](https://vueuse.org/).
+
+Fill in the missing code (marked with `//greasy grinch footprints!`) to get the radio working again.
+
+If you're up for a super tricky but entertaining challege, wipe out app.vue completely and come up with a Christmas Radio of your own!
 
 ## Example of a solution in action
 

@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-import IconUp from './icons/IconUp.vue'
-import IconDown from './icons/IconDown.vue'
-import IconLeft from './icons/IconLeft.vue'
-import IconRight from './icons/IconRight.vue'
-import IconInfo from './icons/IconInfo.vue'
+import IconUp from '@/components/icons/IconUp.vue'
+import IconDown from '@/components/icons/IconDown.vue'
+import IconLeft from '@/components/icons/IconLeft.vue'
+import IconRight from '@/components/icons/IconRight.vue'
+import IconInfo from '@/components/icons/IconInfo.vue'
 import { onClickOutside, onKeyStroke } from '@vueuse/core'
 const open = ref(false)
 const el = ref(null)

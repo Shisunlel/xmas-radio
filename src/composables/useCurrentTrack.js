@@ -9,14 +9,6 @@ const { playing, currentTime, duration, volume } = useMediaControls(el, {
   src: currentTrack,
 })
 
-function prettifyTime(time) {
-  const minutes = Math.floor(time / 60)
-  const seconds = Math.floor(time - minutes * 60)
-
-  const half = `${minutes.toString().length === 1 ? '0' + minutes : minutes}`
-  return `${half}:${seconds.toString().length === 1 ? '0' + seconds : seconds}`
-}
-
 export function useCurrentTrack() {
   function play(song = null) {
     if (song) state.value = song
@@ -26,7 +18,42 @@ export function useCurrentTrack() {
     })
   }
 
-  const progress = computed(() => (currentTime.value / duration.value) * 100)
+  function prettifyTime(time) {
+    //greasy grinch footprints!
+    // time is in millseconds
+    // you should cnage to minutes:seconds
+    return '00:00'
+  }
+
+  const progress = computed(() => {
+    //greasy grinch footprints!
+    // knowing the current time
+    // and the duration of the whole track
+    // is helpful here
+    // (info available via useMediaControls composable)
+    return 0.8
+  })
+
+  function pause() {
+    //greasy grinch footprints!
+    // you can mutate the value of
+    // playing from useMediaControls composable
+  }
+
+  function ff() {
+    //greasy grinch footprints!
+    // move track ahead 10 seconds
+    // you can mutate the value of currentTime
+    // from the useMediaControls composable
+  }
+
+  function rewind() {
+    //greasy grinch footprints!
+    // move track back 10 seconds
+    // you can mutate the value of currentTime
+    // from the useMediaControls composable
+  }
+
   const durationPretty = computed(() => {
     return prettifyTime(duration.value)
   })
@@ -37,18 +64,6 @@ export function useCurrentTrack() {
   const timeDisplay = computed(() => {
     return `${currentTimePretty.value} - ${durationPretty.value}`
   })
-
-  function pause() {
-    playing.value = false
-  }
-
-  function ff() {
-    currentTime.value = currentTime.value + 10
-  }
-
-  function rewind() {
-    currentTime.value = currentTime.value - 10
-  }
 
   return {
     pause,

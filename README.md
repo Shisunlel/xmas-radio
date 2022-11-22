@@ -16,11 +16,13 @@ If you're up for a super tricky but entertaining challege, wipe out app.vue comp
 
 ## Example of a solution in action
 
-Insert screenshots and/or recordings of a target application in action here.
+https://silly-horse-5344a8.netlify.app/
 
 ## Author
 
-Insert your links here, or anything else you'd like to promote.
+This challenge was created by [Daniel Kelly](https://twitter.com/danielkelly_io), lead instructor at [Vue School](https://vueschool.io/).
+
+Learn more about VueUse from our premium video course: [VueUse for Everyone](https://vueschool.io/courses/vueuse-for-everyone)! Plus learn other hot Vue technologies like [Pinia](https://vueschool.io/courses/pinia-the-enjoyable-vue-store), [Vitest](https://vueschool.io/courses/rapid-testing-with-vitest), [TypeScript](https://vueschool.io/courses/typescript-with-vue-js-3), [Nuxt 3](https://vueschool.io/courses/nuxt-js-3-fundamentals), and more!
 
 ## Credits
 

@@ -36,7 +36,7 @@ defineProps({
         <IconPlay v-else />
       </div>
 
-      <img class="w-20" :src="`/img/${song.slug}.jpg`" :alt="song.title" />
+      <img class="w-20" :src="`./img/${song.slug}.jpg`" :alt="song.title" />
     </div>
     <div class="ml-5">
       <div>{{ song.title }}</div>

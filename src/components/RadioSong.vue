@@ -15,6 +15,7 @@ defineProps({
     default: false,
   },
 })
+const baseUrl = import.meta.env.BASE_URL
 </script>
 <template>
   <li
@@ -36,7 +37,7 @@ defineProps({
         <IconPlay v-else />
       </div>
 
-      <img class="w-20" :src="`/xmas-radio/img/${song.slug}.jpg`" :alt="song.title" />
+      <img class="w-20" :src="`${baseUrl}img/${song.slug}.jpg`" :alt="song.title" />
     </div>
     <div class="ml-5">
       <div>{{ song.title }}</div>

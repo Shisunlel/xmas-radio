@@ -19,7 +19,7 @@ const songs = [
 const { state, next, prev } = useCycleList(songs)
 
 const current = computed(() => {
-  return `/xmas-radio/audio/${state.value.slug}.mp3`
+  return `${import.meta.env.BASE_URL}audio/${state.value.slug}.mp3`
 })
 
 export function usePlaylist() {
